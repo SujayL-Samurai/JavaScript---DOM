@@ -1,0 +1,56 @@
+.firstElementChild
+.lastElementChild
+.parentElement
+.nextElementSibling
+.previousElementSibling
+.chikdren[]
+.Array.from(.children)
+
+index.js;
+
+
+//let element = document.body;
+let element = document.querySelector("#fruits");
+//let parent = element.parentElement;
+//let sibling = element.nextElementSibling;
+//let sibling = element.previousElementSibling;
+//let child = element.firstElementChild;
+//let child = element.lastElementChild;
+let children = Array.from(element.children);
+
+children.forEach(child => child.style.backgroundColor = "lightgreen")
+
+
+index.html;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <ul id="fruits">
+        <li>mango</li>
+        <li>kiwi</li>
+        <li>apple</li>
+    </ul>
+
+    <ul id="vegetables">
+        <li>carrot</li>
+        <li>lettuce</li>
+        <li>tomato</li>
+    </ul>
+
+    <ul id="dessert">
+        <li>icecream</li>
+        <li>cake</li>
+        <li>donut</li>
+    </ul>
+    <script src="index.js"></script>
+</body>
+</html>
+
